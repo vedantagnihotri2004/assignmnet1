@@ -1,2 +1,3 @@
 # assignmnet1
-a tutedude assignkment reposirty
+a tutedude assignment repo
+
