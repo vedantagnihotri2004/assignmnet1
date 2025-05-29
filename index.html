@@ -1,115 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Welcome to Our Website</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-      background-color: #f9f9f9;
-    }
-    header, section, footer {
-      margin-bottom: 40px;
-    }
-    table, th, td {
-      border: 1px solid #000;
-      border-collapse: collapse;
-      padding: 10px;
-    }
-    form input {
-      display: block;
-      margin: 10px 0;
-      padding: 8px;
-      width: 300px;
-    }
-    form button {
-      padding: 8px 16px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header, section, footer {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        input, button {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Our Web Development Studio</h1>
+    </header>
 
-  <!-- Header Section -->
-  <header>
-    <h1>Welcome to Our Amazing Service Platform!</h1>
-  </header>
+    <!-- About Section -->
+    <section>
+        <h2>About Us</h2>
+        <p>
+            Welcome to our professional web development studio where creativity meets functionality. 
+            We specialize in creating modern, responsive websites tailored to meet your specific business needs. 
+            Our team of experienced developers and designers work collaboratively to deliver stunning digital 
+            experiences that engage your audience and drive results. With over 5 years in the industry, 
+            we've helped businesses of all sizes establish a strong online presence. 
+            We pride ourselves on delivering projects on time and within budget.
+        </p>
+    </section>
 
-  <!-- About Section -->
-  <section>
-    <h2>About Us</h2>
-    <p>
-      We are a passionate team dedicated to delivering top-quality services tailored to your needs.
-      Our website is designed to provide an easy and efficient way for you to explore our offerings,
-      check prices, and reach out to us directly. Whether you’re looking for professional help or
-      personal solutions, we’re here to make your experience seamless and satisfying.
-    </p>
-  </section>s
+    <!-- Image Section -->
+    <section>
+        <h2>Our Work Environment</h2>
+        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Web Development Team Working">
+    </section>
 
-  <!-- Image Section -->
-  <section>
-    <h2>Our Team at Work</h2>
-    <img src = "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80" alt="Team at Work" style="width:100%; max-width:600px;">
-  </section>
+    <!-- Services Section -->
+    <section>
+        <h2>Our Services</h2>
+        <ul>
+            <li>Responsive Website Design</li>
+            <li>E-commerce Solutions</li>
+            <li>Content Management Systems (CMS)</li>
+            <li>Web Application Development</li>
+            <li>SEO Optimization</li>
+            <li>Website Maintenance</li>
+        </ul>
+    </section>
 
-  <!-- Services Section -->
-  <section>
-    <h2>Our Services</h2>
-    <ul>
-      <li>Web Development</li>
-      <li>Graphic Design</li>
-      <li>Digital Marketing</li>
-      <li>SEO Optimization</li>
-      <li>Technical Support</li>
-    </ul>
-  </section>
+    <!-- Video Section -->
+    <section>
+        <h2>How We Work</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zJSY8tbf_ys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
 
-  <!-- Price List Section -->
-  <section>
-    <h2>Price List</h2>
-    <table>
-      <tr>
-        <th>Service</th>
-        <th>Price</th>
-      </tr>
-      <tr>
-        <td>Web Development</td>
-        <td>$1000</td>
-      </tr>
-      <tr>
-        <td>Graphic Design</td>
-        <td>$500</td>
-      </tr>
-      <tr>
-        <td>Digital Marketing</td>
-        <td>$750</td>
-      </tr>
-      <tr>
-        <td>SEO Optimization</td>
-        <td>$400</td>
-      </tr>
-      <tr>
-        <td>Technical Support</td>
-        <td>$300</td>
-      </tr>
-    </table>
-  </section>
+    <!-- Price List Section -->
+    <section>
+        <h2>Price List</h2>
+        <table>
+            <tr>
+                <th>Service</th>
+                <th>Price (USD)</th>
+            </tr>
+            <tr>
+                <td>Basic Website (5 pages)</td>
+                <td>$1,500</td>
+            </tr>
+            <tr>
+                <td>E-commerce Website</td>
+                <td>$3,500</td>
+            </tr>
+            <tr>
+                <td>Custom Web Application</td>
+                <td>$5,000+</td>
+            </tr>
+            <tr>
+                <td>Website Redesign</td>
+                <td>$1,200</td>
+            </tr>
+            <tr>
+                <td>Monthly Maintenance</td>
+                <td>$250</td>
+            </tr>
+            <tr>
+                <td>SEO Package</td>
+                <td>$750</td>
+            </tr>
+        </table>
+    </section>
 
-  <!-- Form Section -->
-  <section>
-    <h2>Contact Us</h2>
-    <form>
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <input type="tel" name="phone" placeholder="Your Phone" required>
-      <button type="submit">Submit</button>
-    </form>
-  </section>
+    <!-- Form Section -->
+    <section>
+        <h2>Contact Us</h2>
+        <form>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
 
-  <!-- Footer Section -->
-  <footer>
-    <p>Contact us at info@example.com or call us at +1 234 567 8901. We’re here to help!</p>
-  </footer>
-
+    <!-- Footer Section -->
+    <footer>
+        <h2>Contact Information</h2>
+        <p>Email: contact@webdevstudio.com | Phone: (123) 456-7890 | Address: 123 Web Dev Street, Digital City</p>
+        <p>&copy; 2023 Web Development Studio. All rights reserved.</p>
+    </footer>
 </body>
 </html>
